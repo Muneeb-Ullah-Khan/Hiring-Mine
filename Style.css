@@ -1,0 +1,929 @@
+/* These are for theme color button */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {box-sizing: border-box;}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+body.dark {background-color: #292c35; color: #fff;} 
+body.dark h1, body.dark .support a {color: #fff;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+.support {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover{
+  transform: scale(1.1);
+}
+/*--------------------------------- Header Styling ------------------------------- */
+.header-container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    padding: 12px 24px;
+    z-index: 1000;
+    background-color: auto;
+    
+    
+}
+
+.header-image{
+    width: 200px;
+}
+
+.options ul li{
+    display: inline;
+    margin: 10px;
+    color: var(--neutral700);
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.speacial-header-text{
+    color: #6851ff !important;
+}
+
+                    /* ------------------------ Start Designing Heroic Section ----------------------------- */
+
+.hero-section{
+    margin: 90px auto;
+    margin-bottom: 0px;
+    width: 1200px;
+    text-align: center;
+    background-image: linear-gradient(to top, #6851ff41,#fff) ;
+    border-radius: 20px;
+    border-bottom-right-radius: 0 ;
+    border-bottom-left-radius: 0 ;
+}
+
+.backroundimage img{
+    margin: 0px auto;
+    width: 1200px;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+
+.backroundimage{
+    margin: 0px auto;
+    width: 1200px;
+    background-color:#6851ff41 ;
+}
+
+.bolder-text-hero{
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -.02em;
+    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 80px !important;
+    line-height: 100px;
+}
+
+.hero-sec-normal-para{
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.hero-sec-inpit{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    padding-right: 14px;
+    border: 3px solid #edeff3;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.hero-sec-inpit input{
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: 100%;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 8.5px 0px 8.5px 14px;
+    width: 600px;
+}
+
+.hero-sec-inpit input:focus{
+    outline: transparent;
+}
+
+.hero-sec-findjobs-button button{
+    color: white;
+    background-image: linear-gradient(to right, rgb(120, 78, 216),#522fd4);
+    font-size: 20px;
+    padding: 12px 24px;
+    font-weight: bolder;
+    border-radius: 30px;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+}
+
+.Popular-searches{
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -.02em;
+    background: linear-gradient(106.43deg, #522fd4, #12b8eb 95.12%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 80px !important;
+    line-height: 100px;
+}
+
+.hero-sec-serches li{
+    display: inline;
+    border: 1px solid #522fd4;
+    padding: 12px 24px;
+    line-height: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 24px 5px;
+}
+
+                          /* Get hired styling */
+.fourth-row-container{
+    font-size: 24px;
+    width: 1200px;
+    margin: 20px auto;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.fourth-row-container h1 span{
+    color: #522fd4;
+}
+
+.fourth-row-container p{
+    font-size: 20px;
+    line-height: 0px
+}
+
+
+/*------------------------------------- Fifth row styling---------------------------- */
+
+.fifth-row-content{
+    width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    text-align: center;
+    gap: 3px;
+}
+
+.fifth-row-inner-content{
+    background-image: linear-gradient(to bottom, rgba(255, 227, 227, 1000000000), rgb(175, 117, 2400000));
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fifth-row-inner-content:hover{
+    box-shadow: 2px 2px 2px gray;
+}
+.icon{
+    color: #522fd4;
+    font-size: 20px;
+}
+
+.create-fifth-account h3{
+    color: #260a8b;
+}
+
+.fifth-row-discription p{
+    color: #260a8b;
+}
+
+/* ------------------------------Sixth Row Styling */
+
+.sixth-row{
+    width: 1200px;
+    margin:0px  auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sixthbolder{
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+.sixthbolder span{
+    color: #522fd4;
+}
+
+.Sixthpara{
+    font-size: 20px;
+        width: 70%;
+        margin: 0 auto;
+}
+
+/* <!------------------------------------------ Seventh-row-start's ---------------------------------> */
+
+.seventh-wrapper{
+    width: 1200px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    column-gap: 2px;
+    row-gap: 2px;
+    
+}
+
+.seventh-inner:hover{
+    transform: translateY(-10%);
+    transition: 1s;
+}
+
+.seventh-inner{
+    padding: 10px 0px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgba(255, 227, 227, 1000000000), rgb(175, 117, 2400000));
+    border-radius: 10px;
+}
+.seventh-wrapper h4{
+    color: #6851ff;
+    font-weight: bolder;
+}
+
+.seventh-wrapper p{
+    color: grey;
+    font-weight: bold;
+}
+
+/*---------------------------- Designing eight row-0-------------------------------- */
+
+.eight-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    text-align: center;
+}
+
+.eight-fst-row span{
+    color: #6851ff;
+}
+
+.eight-sec-row span{
+    color: #6851ff;
+    
+}
+
+.div-eight{
+    width: 2px;
+}
+
+.div-eight div{
+    width: 5px;
+    background-color: #522fd4;
+    height: 200px;
+    transform: translateY(50%);
+    transform: translateX(1000%);
+}
+
+.div-eight div p{
+    visibility: hidden;
+}
+   /*---------- Fottoer Styling -----------*/
+.footer{
+    width: 100%;
+    margin:0 auto;
+    margin-top:50px;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom,#7014e9,rgba(91, 20, 20,250));
+}
+
+.footer-column-2{
+    color: white;
+}
+
+.footer-column-2 li{
+    color: wheat;
+    display: inline;
+    font-size: 30px;
+    margin: 0 20px ;
+    cursor: pointer;
+}
+
+.footer-column-1{
+    width: 400px;
+    padding: 60px 0;
+
+}
+
+.Hiring-side-icon{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-row-2{
+    color: white;
+    font-size: 30px;
+}
+
+.footer-row-2 p{
+    font-size: 16px;
+}
+
+
+.last-row{
+    width: 100%;
+    margin:0 auto;
+    padding: 20px 24px;
+    margin-top: 2px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to top,#7014e9,rgba(91, 20, 20,250));
+}
+
+.footer-same{
+    display: inline;
+    margin: 2px 10px;
+    cursor: pointer;
+}
+
+.footer-same:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+/* Here we start media query */
+
+@media (max-width:1200px) {
+    .hero-section{
+        margin: 90px auto;
+        margin-bottom: 0px;
+        width: 800px;
+        text-align: center;
+        background-image: linear-gradient(to top, #6851ff41,#fff) ;
+        border-radius: 20px;
+        border-bottom-right-radius: 0 ;
+        border-bottom-left-radius: 0 ;
+    }
+
+    
+    
+    .backroundimage img{
+        margin: 0px auto;
+        width: 800px;
+        border-bottom-right-radius: 20px ;
+        border-bottom-left-radius: 20px ;
+    }
+    
+    .backroundimage{
+        margin: 0px auto;
+        width: 800px;
+        background-color:#6851ff41 ;
+    }
+    
+    /* Get Hired style */
+
+    .fourth-row-container{
+        font-size: 24px;
+        width: 800px;
+        margin: 20px auto;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    /* Fifth row styling */
+
+    .fifth-row-content{
+        width: 800px;
+        margin: 10px auto;
+        display: flex;
+        text-align: center;
+        gap: 3px;
+    }
+
+    /* Sixth Row */
+    .sixth-row{
+        width: 800px;
+        margin:0px  auto;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .sixth-imagessss img{
+        width: 800px;
+    }
+    
+    
+.seventh-wrapper{
+    width: 1200px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+    .seventh-wrapper{
+        width: 800px;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        column-gap: 2px;
+        row-gap: 2px;
+        
+    }
+    
+    /* eight row */
+
+    .eight-container{
+        width: 800px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 40px 1fr;
+        text-align: center;
+    }
+
+    .div-eight div{
+        width: 5px;
+        background-color: #522fd4;
+        height: 200px;
+        transform: translateY(50%);
+        transform: translateX(700%);
+    }
+
+    /* Heder */
+
+    .header-container{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+        padding: 12px 24px;
+        z-index: 1000;
+        background-color: auto;
+        
+        
+    }
+    
+    .header-image{
+        width: 160px;
+    }
+    
+    .options ul li{
+        display: inline;
+        margin: 5px;
+        color: var(--neutral700);
+        font-family: "Roboto", serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    
+    .speacial-header-text{
+        color: #6851ff !important;
+    }
+}
+
+@media (max-width:800px) {
+    .hero-section{
+        margin: 90px auto;
+        margin-bottom: 0px;
+        width: 500px;
+        text-align: center;
+        background-image: linear-gradient(to top, #6851ff41,#fff) ;
+        border-radius: 20px;
+        border-bottom-right-radius: 0 ;
+        border-bottom-left-radius: 0 ;
+    }
+    
+    .hero-sec-inpit input{
+        width: 400px;
+    }
+    .backroundimage img{
+        margin: 0px auto;
+        width: 500px;
+        border-bottom-right-radius: 20px ;
+        border-bottom-left-radius: 20px ;
+    }
+    
+    .backroundimage{
+        margin: 0px auto;
+        width: 500px;
+        background-color:#6851ff41 ;
+    }
+    
+    /* Get Hired style */
+
+    .fourth-row-container{
+        font-size: 24px;
+        width: 500px;
+        margin: 20px auto;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .fourth-row-container p{
+        line-height: 30px;
+    }
+
+    /* Fifth row styling */
+
+    .fifth-row-content{
+        width: 500px;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 3px;
+    }
+
+    /* Sixth Row */
+    .sixth-row{
+        width: 500px;
+        margin:0px  auto;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .sixth-imagessss img{
+        width: 500px;
+    }
+    
+    
+.seventh-wrapper{
+    width: 500px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+    .seventh-wrapper{
+        width: 500px;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        text-align: center;
+        column-gap: 2px;
+        row-gap: 2px;
+        
+    }
+    
+    /* eight row */
+
+    .eight-container{
+        width: 500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    /* Heder */
+
+    .header-container{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+        padding: 12px 24px;
+        z-index: 1000;
+        background-color: auto;
+        
+        
+    }
+    
+    .header-image{
+        width: 100px;
+    }
+    
+    .options ul li{
+        display: inline;
+        margin: 5px;
+        width: 300px;
+        color: var(--neutral700);
+        font-family: "Roboto", serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        line-height: 18px;
+    }
+    
+    .speacial-header-text{
+        color: #6851ff !important;
+    }
+}
+
+
+@media (max-width:514px) {
+    .hero-section{
+        margin: 90px auto;
+        margin-bottom: 0px;
+        width: 414px;
+        text-align: center;
+        background-image: linear-gradient(to top, #6851ff41,#fff) ;
+        border-radius: 20px;
+        border-bottom-right-radius: 0 ;
+        border-bottom-left-radius: 0 ;
+    }
+
+    .hero-sec-inpit input{
+        width: 414px;
+    }
+    
+    .backroundimage img{
+        margin: 0px auto;
+        width: 414px;
+        border-bottom-right-radius: 20px ;
+        border-bottom-left-radius: 20px ;
+    }
+    
+    .backroundimage{
+        margin: 0px auto;
+        width: 414px;
+        background-color:#6851ff41 ;
+    }
+    
+    /* Get Hired style */
+
+    .fourth-row-container{
+        font-size: 24px;
+        width: 414px;
+        margin: 20px auto;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .fourth-row-container p{
+        line-height: 30px;
+    }
+
+    /* Fifth row styling */
+
+    .fifth-row-content{
+        width: 414px;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 3px;
+    }
+
+    /* Sixth Row */
+    .sixth-row{
+        width: 414px;
+        margin:0px  auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .sixth-imagessss img{
+        width: 414px;
+    }
+    
+    
+.seventh-wrapper{
+    width: 414px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+    .seventh-wrapper{
+        width: 414px;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        text-align: center;
+        column-gap: 2px;
+        row-gap: 2px;
+        
+    }
+    
+    /* eight row */
+
+    .eight-container{
+        width: 500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    /* Heder */
+
+    .header-container{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+        padding: 12px 24px;
+        z-index: 1000;
+        background-color: auto;
+        text-align: center;
+        
+        
+    }
+    
+    .header-image{
+        width: 100px;
+    }
+    
+    .options ul li{
+        display: inline;
+        margin: 5px;
+        width: 300px;
+        color: var(--neutral700);
+        font-family: "Roboto", serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        line-height: 18px;
+    }
+    
+    .speacial-header-text{
+        color: #6851ff !important;
+    }
+
+
+
+    .footer{
+        width: 100%;
+        margin:0px auto;
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: linear-gradient(to bottom,#7014e9,rgba(91, 20, 20,250));
+    }
+    
+    .footer-column-2{
+        color: white;
+    }
+    
+    .footer-column-2 li{
+        color: wheat;
+        display: inline;
+        font-size: 30px;
+        margin: 0 20px ;
+        cursor: pointer;
+    }
+    
+    .footer-column-1{
+        width: 400px;
+        padding: 0px 0;
+        padding-top: 20px;
+        padding-left: 20px;
+    
+    }
+    
+    .Hiring-side-icon{
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    
+    .footer-row-2{
+        color: white;
+        font-size: 30px;
+        padding-top: 0px;
+        padding-left: 20px;
+        line-height: 0px;
+    }
+    
+    .footer-row-2 p{
+        font-size: 16px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    
+    .footer-column-2{
+        padding-left: 20px;
+    }
+    .last-row{
+        width: 100%;
+        margin:0 auto;
+        padding: 12px 24px;
+        margin-top: 2px;
+        text-align: center;
+        color: white;
+        background-image: linear-gradient(to top,#7014e9,rgba(91, 20, 20,250));
+    }
+    
+    .footer-same{
+        display: inline;
+        margin: 2px 10px;
+        cursor: pointer;
+    }
+    
+    .footer-same:hover{
+        text-decoration: underline;
+        transition: 1s;
+    }
+}
